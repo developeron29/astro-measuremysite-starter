@@ -1,0 +1,32 @@
+plugins = []
+headers = []
+redirects = []
+
+[template]
+
+[template.environment]
+PUBLIC_MEASUREMYSITE_KEY = "Your site's public key (pk_...) from measuremy.site, dashboard → Setup tab"
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/private/tmp/claude-501/-Users-ayushn-Documents-agentlytics/7967b267-7f24-4459-926e-559e4dd521b5/scratchpad/starter-repo/dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

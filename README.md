@@ -20,7 +20,8 @@ Or deploy it straight away (each asks for your site key, `PUBLIC_MEASUREMYSITE_K
    PUBLIC_MEASUREMYSITE_KEY=pk_...
    ```
 
-3. Deploy. Every built page is tracked; `npm run dev` isn't, so local visits don't count.
+3. Optional: set `PUBLIC_MEASUREMYSITE_STATS_URL` to your public dashboard link (Setup tab → Public dashboard) and the homepage links to it.
+4. Deploy. Every built page is tracked; `npm run dev` isn't, so local visits don't count.
 
 Or ask your coding agent: `.mcp.json` connects Claude Code to the measuremysite MCP server (it signs in with OAuth, no key), which can fetch the key for your domain and answer questions like "where did yesterday's visitors come from?".
 
@@ -33,9 +34,8 @@ Custom events: `<button data-measuremysite-event="signup">` or `window.measuremy
 ├── public/
 │   └── favicon.svg
 ├── src
-│   ├── assets
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── Welcome.astro  ← homepage: setup steps, analytics status, a test event button
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
