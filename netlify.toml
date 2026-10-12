@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Netlify's deploy button asks for these before the first build.
+[template.environment]
+  PUBLIC_MEASUREMYSITE_KEY = "Your site's public key (pk_...) from measuremy.site, dashboard → Setup tab"

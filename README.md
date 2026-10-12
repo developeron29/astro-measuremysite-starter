@@ -6,6 +6,11 @@ Astro's basics starter with cookieless analytics already set up through [astro-m
 npm create astro@latest -- --template developeron29/astro-measuremysite-starter
 ```
 
+Or deploy it straight away (each asks for your site key, `PUBLIC_MEASUREMYSITE_KEY`):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdeveloperon29%2Fastro-measuremysite-starter&env=PUBLIC_MEASUREMYSITE_KEY&envDescription=Your%20site%27s%20public%20key%20%28pk_...%29%20from%20the%20measuremy.site%20dashboard%27s%20Setup%20tab&envLink=https%3A%2F%2Fmeasuremy.site%2Fdocs%2Finstall&project-name=astro-measuremysite-starter&repository-name=astro-measuremysite-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/developeron29/astro-measuremysite-starter)
+
 ## Analytics setup
 
 1. Sign up at [measuremy.site](https://measuremy.site/login) (30-day free trial), add your domain and copy the `pk_...` key from the Setup tab.
@@ -36,6 +41,7 @@ Custom events: `<button data-measuremysite-event="signup">` or `window.measuremy
 │   └── pages
 │       └── index.astro
 ├── astro.config.mjs   ← measuremysite() integration
+├── netlify.toml       ← build settings and the key prompt for Netlify's deploy button
 └── .env.example       ← PUBLIC_MEASUREMYSITE_KEY
 ```
 
